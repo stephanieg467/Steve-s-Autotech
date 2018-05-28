@@ -53,18 +53,12 @@ if (!empty($errors)) {
     */
 
     //clean data
-    $name = test_input($_POST['name']);
-    $email = test_input($_POST['email']);
-    $phone = test_input($_POST['phone']);
-    $vehicle = test_input($_POST['vehicle']);
-    $reason = test_input($_POST['reason']);
 
-
-    $name = $conn->real_escape_string($name);
-    $email = $conn->real_escape_string($email);
-    $phone = $conn->real_escape_string($phone);
-    $vehicle = $conn->real_escape_string($vehicle);
-    $reason = $conn->real_escape_string($reason);
+    $name = $conn->real_escape_string(test_input($_POST['name']));
+    $email = $conn->real_escape_string(test_input($_POST['email']));
+    $phone = $conn->real_escape_string(test_input($_POST['phone']));
+    $vehicle = $conn->real_escape_string(test_input($_POST['vehicle']));
+    $reason = $conn->real_escape_string(test_input($_POST['reason']));
     $Foption = $conn->real_escape_string(strtotime($_POST["option1"]));
     $Foption = date('Y-m-d', $Foption);
     $Loption = $conn->real_escape_string(strtotime($_POST["option2"]));
@@ -77,13 +71,11 @@ if (!empty($errors)) {
     $sql = "INSERT INTO appointments (name, email, phone, vehicle, reason, firstoption, secondoption) VALUES ('  " . $name . "','" . $email . "','" . $phone . "','" . $vehicle . "','" . $reason . "','" . $Foption . "','" . $Loption . "  ')";
 
     //just for testing
-    /*
     if ($conn->query($sql) === FALSE) {
         echo "Error: " . $sql . "<br>" . $conn->error;
-    } else {
-        echo "Success";
-    }
-    */
+    } /*else {
+            echo "Success";
+        }*/
 
     $conn->close();
 

@@ -40,13 +40,10 @@
         $conn = new mysqli($servername, $username, $password, $dbname);
 
 //clean data
-        $name = test_input($_POST['name']);
-        $email = test_input($_POST['email']);
-        $review = test_input($_POST['review']);
 
-        $name = $conn->real_escape_string($name);
-        $email = $conn->real_escape_string($email);
-        $review = $conn->real_escape_string($review);
+        $name = $conn->real_escape_string(test_input($_POST['name']));
+        $email = $conn->real_escape_string(test_input($_POST['email']));
+        $review = $conn->real_escape_string(test_input($_POST['review']));
         $date2 = date("Y/m/d");
 
 // Check connection
@@ -56,13 +53,11 @@
         $sql = "INSERT INTO reviews (name, email, review, date2) VALUES ('  " . $name . "','" . $email . "','" . $review . "','" . $date2 . "  ')";
 
 //just for development to make sure that connection was successful
-        /*
-            if ($conn->query($sql) === FALSE) {
-                echo "Error: " . $sql . "<br>" . $conn->error;
-            } else {
+        if ($conn->query($sql) === FALSE) {
+            echo "Error: " . $sql . "<br>" . $conn->error;
+        } /*else {
             echo "Success";
-        }
-        */
+        }*/
 
         $conn->close();
 
@@ -79,6 +74,7 @@ function test_input($data) {
     $data = htmlspecialchars($data);
     return $data;
 }
+
 
 
 
