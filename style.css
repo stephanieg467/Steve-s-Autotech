@@ -1,0 +1,904 @@
+
+/*navbar style*/
+
+.navbar {
+    margin-bottom: -7px;
+    border-radius: 0;
+    background-color: #1a1a1a;
+}
+img#logo{
+    border-radius: 5px;
+}
+
+/*Main style*/
+
+h1.main-title {
+    margin-left: 55px;
+    font-size: 300%;
+    margin-top: 20px;
+    float: left;
+    color: #ffffff;
+    font-family: Impact, Arial, Verdana;
+    text-transform: uppercase;
+    border-bottom: #1a1a1a 10px solid;
+    font-weight: 100;
+}
+h1.main-title2 {
+    font-size: 300%;
+    margin: 38px 0px;
+    color: #ffffff;
+    float: left;
+    font-family: Impact, Arial, Verdana;
+    text-transform: uppercase;
+    position: relative;
+    font-weight: 100;
+}
+.jumbo_main {
+    display: block;
+    width: 100%;
+    height: 400px;
+    padding: 20px 0;
+    background-image: url('images/main_bmw.jpg');
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-box-shadow: inset 0 -4px 9px -3px #000;
+    -moz-box-shadow: inset 0 -4px 9px -3px #000;
+    box-shadow: inset 0 -4px 9px -3px #000;
+    color: black;
+}
+div#title {
+    margin-top: 3%;
+    width: 50%;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #d0f0f6;
+    opacity: 0.5;
+}
+@media screen and (max-width: 768px) {
+    .jumbo_main {
+        display: block;
+        width: 100%;
+        height: auto;
+        padding: 20px 0;
+        background-image: url('images/main_bmw.jpg');
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        -webkit-box-shadow: inset 0 -4px 9px -3px #000;
+        -moz-box-shadow: inset 0 -4px 9px -3px #000;
+        box-shadow: inset 0 -4px 9px -3px #000;
+        color: black;
+    }
+    div#title {
+        margin-top: 3%;
+        width: auto;
+        border: 1px solid black;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #d0f0f6;
+        opacity: 0.5;
+    }
+}
+h1#title {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 80px;
+    font-weight: bold;
+}
+p#title {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+/*Services style*/
+
+img#erikservices {
+    width: 100%;
+    border-radius: 8px;
+
+}
+h1#services-paragraph {
+    margin: 20px;
+    font: 30px/40px Georgia, serif;
+}
+p#services-paragraph {
+    margin: 20px;
+    font: 20px/30px Georgia, serif;
+}
+h1#brands-title {
+    font: 30px/40px Georgia, serif;
+}
+div#row-brands {
+    position: relative;
+    left: 110px;
+}
+@media screen and (max-width: 768px) {
+    div#row-brands {
+        position: relative;
+        left: 50px;
+    }
+}
+.container-parts {
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+.container-part1 {
+    position: relative;
+    width: 20%;
+}
+.container-part2 {
+    position: relative;
+    width: 20%;
+}
+.container-part3 {
+    position: relative;
+    width: 20%;
+}
+.container-part4 {
+    position: relative;
+    width: 20%;
+}
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.container-part1:hover .image {
+    opacity: 0.3;
+}
+.container-part1:hover .middle {
+    opacity: 1;
+}
+.container-part2:hover .image {
+    opacity: 0.3;
+}
+.container-part2:hover .middle {
+    opacity: 1;
+}
+.container-part3:hover .image {
+    opacity: 0.3;
+}
+.container-part3:hover .middle {
+    opacity: 1;
+}
+.container-part4:hover .image {
+    opacity: 0.3;
+}
+.container-part4:hover .middle {
+    opacity: 1;
+}
+.text {
+    background-color: #111010;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+h1#title_services {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+.jumbo_services {
+    display: block;
+    width: 100%;
+    height: 400px;
+    padding: 20px 0;
+    background-image: url('images/services.jpeg');
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-box-shadow: inset 0 -4px 9px -3px #000;
+    -moz-box-shadow: inset 0 -4px 9px -3px #000;
+    box-shadow: inset 0 -4px 9px -3px #000;
+    color: black;
+}
+div#title_services {
+    margin-top: 3%;
+    width: 50%;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #d0f0f6;
+    opacity: 0.5;
+}
+@media screen and (max-width: 768px) {
+    div#title_services {
+        margin-top: 3%;
+        width: auto;
+        border: 1px solid black;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #d0f0f6;
+        opacity: 0.5;
+    }
+    div#title_contact {
+        margin-top: 3%;
+        width: auto;
+        border: 1px solid black;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #d0f0f6;
+        opacity: 0.5;
+    }
+}
+
+.row.content {height: 450px;}
+
+/*Vehicles styling*/
+
+.jumbo_vehicles {
+    display: block;
+    width: 100%;
+    height: 400px;
+    padding: 20px 0;
+    background-image: url('images/vehicles_heading.jpeg');
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-box-shadow: inset 0 -4px 9px -3px #000;
+    -moz-box-shadow: inset 0 -4px 9px -3px #000;
+    box-shadow: inset 0 -4px 9px -3px #000;
+    color: black;
+}
+img#vehicle-sale {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.carousel-indicators {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    z-index: 15;
+    width: 60%;
+    padding-left: 0;
+    margin-left: -30%;
+    text-align: center;
+    list-style: none;
+}
+ol {
+    margin-top: 0;
+    margin-bottom: -11px;
+}
+div.carousel-inner {
+    position: relative;
+    width: 100%;
+}
+div.item {
+    margin-left: 42%;
+}
+
+/*About us page style */
+
+.container_aboutus {
+    position: relative;
+    width: 303px;
+    background: #1a1a1a;
+    color: white;
+}
+h1.reflect_1 {
+    color: #333333;
+    line-height: 3px;
+    margin: 20px;
+    padding: 0 0 0 10px;
+    font-size: 300%;
+    -webkit-margin-before: 2px;
+    -webkit-margin-after: 10px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+    display: block;
+}
+h1.reflect_2 {
+    color: #CECECE;
+    margin: 20px;
+    line-height: 3px;
+    padding: 0 0 0 10px;
+    font-size: 300%;
+    -webkit-margin-before: -13px;
+    -webkit-margin-after: 40px;
+    -webkit-margin-start: 5px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+    display: block;
+}
+h1#brands-title {
+    border-bottom: 5px solid #1a1a1a;
+    width: 40%;
+    margin: 10px auto;
+}
+.top-bottomtitle {
+    margin: auto;
+    width: 70%;
+    background: #1a1a1a;
+    padding: 2px;
+}
+.top-bottom {
+    background: #1a1a1a;
+    padding: 2px;
+}
+h1.top-bottom2 {
+    text-transform: uppercase;
+    font-family: Garamond, Georgia, "Times New Roman";
+    letter-spacing: .2em;
+    font-weight: 100;
+    color: #FFFFFF;
+    border-top: 1px solid #CCCCCC;
+    border-bottom: #CCCCCC 1px solid;
+    width: 100%;
+    text-align: center;
+}
+h2.top-bottom2 {
+    font-size: 100%;
+    text-transform: uppercase;
+    font-family: Garamond, Georgia, "Times New Roman";
+    letter-spacing: .2em;
+    font-weight: 100;
+    color: #FFFFFF;
+    border-top: 1px solid #CCCCCC;
+    border-bottom: #CCCCCC 1px solid;
+    width: 100%;
+    text-align: center;
+}
+.title {
+    color: grey;
+}
+img#steve {
+    position: relative;
+    width: 100%
+}
+img#erik {
+    position: relative;
+    width: 100%
+}
+img#shop {
+    margin-top: 25px;
+    width: 100%;
+    border-radius: 8px;
+
+}
+.jumbo_aboutus {
+    display: block;
+    width: 100%;
+    height: 400px;
+    padding: 20px 0;
+    background-image: url('images/aboutus_heading.jpeg');
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-box-shadow: inset 0 -4px 9px -3px #000;
+    -moz-box-shadow: inset 0 -4px 9px -3px #000;
+    box-shadow: inset 0 -4px 9px -3px #000;
+    color: black;
+}
+
+/*contact styling*/
+
+.jumbo_contact {
+    display: block;
+    width: 100%;
+    height: 400px;
+    padding: 20px 0;
+    background-image: url('images/contact_heading.jpeg');
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-box-shadow: inset 0 -4px 9px -3px #000;
+    -moz-box-shadow: inset 0 -4px 9px -3px #000;
+    box-shadow: inset 0 -4px 9px -3px #000;
+    color: black;
+}
+div#title_contact {
+    margin-top: 16%;
+    width: 50%;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #d0f0f6;
+    opacity: 0.5;
+}
+h1#appointment {
+    border-bottom: 5px solid #1b1b1b;
+    width: 500px;
+    position: relative;
+    margin: auto;
+}
+label.appformlabel {
+    position: relative;
+    margin-right: 753px;
+}
+#map {
+    width: 80%; height: 400px; margin-left:100px;
+}
+
+.info-window {
+    font-family: 'Montserrat', sans-serif;
+}
+.info-content {
+    color: #999;
+}
+#email:hover {
+    color: red;
+}
+form#appointment-form {
+    position: relative;
+    margin: 20px;
+}
+label.app-form-label {
+    position: relative;
+    width: 100%;
+}
+
+/*affiliates styling*/
+
+.jumbo_affiliates {
+    display: block;
+    width: 100%;
+    height: 400px;
+    padding: 20px 0;
+    background-image: url('images/wof.jpg');
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-box-shadow: inset 0 -4px 9px -3px #000;
+    -moz-box-shadow: inset 0 -4px 9px -3px #000;
+    box-shadow: inset 0 -4px 9px -3px #000;
+    color: black;
+}
+.top-bottom-affiliates {
+    margin: 20px auto;
+    width: 50%;
+    background: #1a1a1a;
+    padding: 2px;
+}
+div#tools-img {
+    position: relative;
+    width: 100%;
+}
+img#tools {
+    margin-left: 25%;
+    position: relative;
+    width: 50%;
+    border-radius: 8px;
+}
+
+/*Sidecontent stylineg*/
+
+#hitwebcounter {
+    margin-top: 190px;
+    position: relative;
+    left: 35px;
+    background: white;
+    width: 120px;
+    border-radius: 10px;
+}
+#hitwebcounter h3 {
+    color: #222;
+    text-shadow: 0px 2px 3px #555;
+}
+
+.sidecontent_main {
+    padding-top: 10px;
+    background: darkblue; /* For browsers that do not support gradients */
+    background: linear-gradient(to top, rgba(0,0,255,1), rgba(0,0,255,0));
+    height: 250%;
+    color: white;
+}
+strong#reviews {
+    color: white;
+    font-size: 40px;
+}
+
+.error {
+    color: #FF0000;
+}
+.success {
+    color: white;
+}
+img#side-content-image {
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 767px) {
+    .sidenav {
+        height: auto;
+        padding: 15px;
+    }
+    .row.content {height:auto;}
+}
+
+/*background for rest of website*/
+
+.container {
+    background-color: #1b1b1b;
+}
+.container-fluid {
+    background: grey;
+}
+.paragraph {
+    color: white;
+}
+#footer {
+    background: #1a1a1a;
+    color: white;
+}
+#footer > .container {
+    padding: 0 15px;
+}
+.list-unstyled {
+    line-height: 1.8;
+}
+
+.spacer {
+    height: 20px;
+}
+.center {
+    text-align: center;
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+.btn-info {
+    background-color: black;
+    color: white;
+}
+.more.btn {
+    background-color: blue;
+    color: black;
+    text-shadow: none;
+}
+
+.col-lg-12 h1, .col-lg-12 h2{
+    padding-left: 450px;
+    color: white;
+}
+.bosch.position.img-responsive {
+    margin-left: 400px;
+}
+.aes.position.img-responsive {
+    margin-right: 400px;
+}
+
+.yelp a:link{
+    color: #0000FF;
+    text-align: center;
+    text-decoration: underline;
+    display: inline-block;
+}
+.yelp a:visited{
+    color: #800080;
+    text-align: center;
+    text-decoration: underline;
+    display: inline-block;
+}
+.yelp a:hover, a:active {
+    color: red;
+    text-align: center;
+    text-decoration: underline;
+    display: inline-block;
+}
+.list-group-item {
+    background-color: black;
+}
+
+.affix {
+    top: 200px;
+    left: 10px;
+    z-index: 9999 !important;
+}
+body {
+    position: relative;
+}
+.logo-header {
+    background: darkgrey;
+    padding: 10px;
+}
+
+.get_response {
+    background: #1a1a1a;
+}
+.container_get_response.paragraph.col-md-12 {
+    background: darkblue;
+}
+.container_get_response.paragraph.col-md-12 h1{
+    margin-left: 35%;
+}
+.container_get_response.paragraph.col-md-12 h3{
+    margin-left: 40%;
+}
+.container_get_response.paragraph.col-md-12 img{
+    margin-left: 35%;
+}
+.glyphicon glyphicon-wrench {
+    position: relative;
+}
+
+/*get_response style*/
+
+.thank-you {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+}
+.background_img{
+    position: relative;
+    opacity: 0.65;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-1ouZq-obdppwWsOCbKQCBBwOFlwD-MoF3tMjq3TLIoCaqmqf");
+    height: 100%;
+}
+.caption {
+    position: absolute;
+    left: 42px;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+.button {
+    display: inline-block;
+    border-radius: 10px;
+    background-color: black;
+    border: solid;
+    border-color:darkblue;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 0px;
+    width: 134px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/*get_appointment style*/
+
+.background_img_appointment{
+    position: relative;
+    opacity: 0.65;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("images/get_app_back.jpeg");
+    height: 100%;
+}
+.caption_app {
+    position: absolute;
+    left: 135px;
+    top: 50%;
+    width: 80%;
+    text-align: center;
+    color: #000;
+}
+
+.caption_app span.border {
+    background-color: #111;
+    color: #fff;
+    margin: 10px;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.span {
+    background-color: dimgrey;
+}
+.rev {
+    border: 2px solid #ccc;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px;
+    width: 50%;
+    position: relative;
+    left: 170px;
+}
+
+.rev::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.rev img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.rev span {
+    font-size: 20px;
+    margin-right: 15px;
+}
+.reviews-container {
+    background-color: #1b1b1b;
+}
+#customer_reviews_jumbotron {
+    margin-top: 20px;
+}
+
+.gly-spin {
+    -webkit-animation: spin 3s infinite linear;
+    -moz-animation: spin 3s infinite linear;
+    -o-animation: spin 3s infinite linear;
+    animation: spin 3s infinite linear;
+}
+@-moz-keyframes spin {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+    100% {
+        -moz-transform: rotate(359deg);
+    }
+}
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+    }
+}
+@-o-keyframes spin {
+    0% {
+        -o-transform: rotate(0deg);
+    }
+    100% {
+        -o-transform: rotate(359deg);
+    }
+}
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+@media screen and (max-width: 767px) {
+    .sidecontent_main {
+        height: auto;
+        padding: 15px;
+    }
+    #heading_main {
+        height: auto;
+        padding: 15px;
+    }
+    .row.content {height:auto;}
+}
+
+/*Securimage style */
+
+@CHARSET "UTF-8";
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+    from {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotating {
+    from {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+.rotating {
+    -webkit-animation: rotating 1.5s linear infinite;
+    -moz-animation: rotating 1.5s linear infinite;
+    -ms-animation: rotating 1.5s linear infinite;
+    -o-animation: rotating 1.5s linear infinite;
+    animation: rotating 1.5s linear infinite;
+}
+input.review-form {
+    width: 150px;
+    border-radius: 5px;
+}
