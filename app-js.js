@@ -17,8 +17,8 @@ $(document).ready(function() {
             'vehicle' 	        : $('input[name=Appvehicle]').val(),
             'reason' 	        : $('textarea[name=Appreason]').val(),
             'option1' 	        : $('input[name=option1]').val(),
-            'option2' 	        : $('input[name=option2]').val(),
-            'captcha'           : $('input[name=captcha]').val()
+            'option2' 	        : $('input[name=option2]').val()
+            //'captcha'           : $('input[name=captcha]').val()
         };
 
         // process the form
@@ -80,11 +80,12 @@ $(document).ready(function() {
                         $('#option2').append('<div class="help-block">' + data.errors.option2 + '</div>'); // add the actual error message under our input
                     }
 
-                    // handle errors for captcha ---------------
+                    /*
                     if (data.errors.captcha) {
-                        $('#Appcaptcha-group').addClass('has-error'); // add the error class to show red input
-                        $('#Appcaptcha-group').append('<div class="help-block">' + data.errors.captcha + '</div>'); // add the actual error message under our input
+                        $('#Appcaptcha-group').addClass('has-error');
+                        $('#Appcaptcha-group').append('<div class="help-block">' + data.errors.captcha + '</div>');
                     }
+                    */
 
 
                 } else {

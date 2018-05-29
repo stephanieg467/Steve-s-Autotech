@@ -13,8 +13,8 @@ $(document).ready(function() {
         var formData = {
             'name' 				: $('input[name=name]').val(),
             'email' 			: $('input[name=email]').val(),
-            'review' 	        : $('textarea[name=review]').val(),
-            'captcha'           : $('input[name=captcha]').val()
+            'review' 	        : $('textarea[name=review]').val()
+            //'captcha'           : $('input[name=captcha]').val()
         };
 
         // process the form
@@ -52,11 +52,13 @@ $(document).ready(function() {
                         $('#review-group').append('<div class="help-block">' + data.errors.review + '</div>'); // add the actual error message under our input
                     }
 
+                    /*
                     // handle errors for captcha ---------------
                     if (data.errors.captcha) {
                         $('#captcha-group').addClass('has-error'); // add the error class to show red input
                         $('#captcha-group').append('<div class="help-block">' + data.errors.captcha + '</div>'); // add the actual error message under our input
                     }
+                    */
 
                 } else {
 

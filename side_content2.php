@@ -38,6 +38,7 @@
                     </div>
                 </div>
 
+                <!--
                 <div class="paragraph row">
                     <div class="col-sm-12">
                         <div id="captcha-group" class="form-group">
@@ -46,6 +47,7 @@
                         </div>
                     </div>
                 </div>
+                -->
 
                 <div class="paragraph row">
                     <div class="col-sm-12">

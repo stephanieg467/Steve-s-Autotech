@@ -1,9 +1,6 @@
 <?php
-
 $errors = array();    // array to hold validation errors
 $data = array();        // array to pass back data
-
-
 // validate the variables ======================================================
 // if any of these variables don't exist, add an error to our $errors array
 if (empty($_POST['name']))
@@ -20,13 +17,29 @@ if (empty($_POST['option1']))
     $errors['option1'] = 'Select a preferred first choice.';
 if (empty($_POST['option2']))
     $errors['option2'] = 'Select a preferred second choice.';
+/*
 if(empty($_POST['captcha']))
     $errors['captcha'] = 'Captcha is required.';
+*/
 
+//validate dates
+$c = date("Y-m-d");
+if (strtotime($_POST['option1']) < strtotime($c))
+    $errors['option1'] = 'Invalid date';
+if (strtotime($_POST['option2']) < strtotime($c))
+    $errors['option2'] = 'Invalid date';
+if (strtotime($_POST['option1']) === strtotime($_POST['option2'])) {
+    $errors['option1'] = 'Choose different dates';
+    $errors['option2'] = 'Choose different dates';
+}
+
+
+/*
 session_start();
 //validate data
 if($_POST['captcha'] != $_SESSION['digit'])
-    $errors['captcha'] = 'Incorrrect captcha. Try again.';
+    $errors['captcha'] = 'Incorrect captcha. Try again.';
+*/
 
 // return a response ===========================================================
 // if there are any errors in our errors array, return a success boolean of false

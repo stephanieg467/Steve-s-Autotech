@@ -12,14 +12,17 @@
         $errors['email'] = 'Email is required.';
     if (empty($_POST['review']))
         $errors['review'] = 'Review is required.';
+   /*
     if(empty($_POST['captcha']))
         $errors['captcha'] = 'Captcha is required.';
+
 
     session_start();
 
 //check that captcha is correct
     if($_POST['captcha'] != $_SESSION['digit'])
         $errors['captcha'] = 'Incorrrect captcha. Try again.';
+   */
 
 // return a response ===========================================================
 // if there are any errors in our errors array, return a success boolean of false

@@ -11,6 +11,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBD_ng4NE2ZpgGDQ3jMTFQtemoO7a_T5HA"></script>
     <script src="custom.js"></script>
+
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="/resources/demos/style.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -137,12 +138,15 @@
                                 <input id="form_option2" type="text" name="option2" class="form-control" placeholder="Enter your second choice">
                             </div>
                         </div>
+
+                        <!--
                         <div class="paragraph row">
                             <div id="Appcaptcha-group" class="col-sm-12 form-group">
                                 <p><img src="captcha.php" width="120" height="30" border="1" alt="CAPTCHA"></p>
                                 <input id="captcha" class="form-control" type="text" size="6" maxlength="5" name="captcha">
                             </div>
                         </div>
+                        -->
 
                         <div class="row">
                             <div class="col-sm-12">
